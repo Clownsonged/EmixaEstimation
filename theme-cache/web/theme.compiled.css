@@ -28737,4 +28737,8 @@ Do not render = "none"
   --yellow: yellow;
 }
 
+.no-scroll .mx-dataview-content {
+  overflow-y: visible !important;
+}
+
 /*# sourceMappingURL=theme.compiled.css.map */

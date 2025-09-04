@@ -1,1 +1,5 @@
 @import "custom-variables";
+
+.no-scroll .mx-dataview-content {
+    overflow-y: visible !important;
+}
