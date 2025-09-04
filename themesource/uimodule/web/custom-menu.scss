@@ -1,0 +1,292 @@
+@import '../../../theme/web/custom-variables';
+
+.region-topbar {
+    background-color: $topbar-bg;
+    box-shadow: 0px 8px 4px rgba(0,0,0,0.20);
+    color: $font-color-default;
+
+    // removing default layoutgrid padding 
+    > .mx-layoutgrid,
+    > .row > .col-12 {
+        padding: 0;
+    }
+
+    // custom logo styling
+    .cs_logo img {
+        max-height: 55px;
+    }
+}
+
+.cell-hashed {
+  background-image: repeating-linear-gradient(
+    45deg,
+    #f0f0f0,
+    #f0f0f0 10px,
+    #dcdcdc 10px,
+    #dcdcdc 20px
+  );
+  background-color: #f0f0f0;
+  color: #333;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+
+.cell-center {
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.badge-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.badge-overlay {
+  position: absolute;
+  top: -1px;
+  right: -5px;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.highlight-week {
+  background-color: #eefaff;  
+  border-top: 4px solid #0250a3;            
+  color: #0250a3;;    
+}
+.cell-danger {
+  background-color: #ffaeae;           
+  color: #000000;;    
+}
+
+.cell-warning {
+  background-color: #ffddaa;            
+  color: #000000;;    
+}
+
+.cell-warn {
+  background-color: #ffe8bd;          
+  color: #000000;;    
+}
+
+.cell-success {
+  background-color: #cdffc4;            
+  color: #000000;;    
+}
+
+.cell-blank {
+  background-color: #f0f0f0;            
+  color: #000000;;    
+}
+
+
+
+.highlight-cell {
+  background-color: #ffd966; /* Soft yellow */
+  font-weight: bold;
+  border: 2px solid #f4b41a;
+}
+
+.standard-week {
+  background-color: #fafafa;  
+  border-top: 4px solid #aaa9a9;            
+  color: #2c2b2b;;    
+}
+
+.column-center .column-header {
+  text-align: center;
+  background-color: transparent;
+}
+
+.mx-tabcontainer {
+    border-radius: 5px;
+    padding: 15px;
+    background-color: white;
+    .mx-tabcontainer-tabs {
+        border: none;
+    }
+    .nav-tabs>li>a {
+        border: none;
+        margin-right: 15px;
+        font-size: 16px;
+        padding: 5px 5px 5px 5px;
+        background-color: transparent;
+    }
+    .mx-tabcontainer-tabs {
+        >li.active>a, >li.active>a:hover, >li.active>a:focus {
+            border: none;
+            border-bottom: solid 2px #0250a3;
+            color: $brand-info;
+            font-weight: bold;
+            background-color: transparent;
+        }
+        >li>a:hover, .mx-tabcontainer-tabs>li>a:focus {
+            background-color: transparent;
+            border: none;
+            border-bottom: solid 2px;
+            font-weight: bold;
+        }
+    }
+    .mx-tabcontainer-content {
+        border: none;
+    }
+}
+
+.borderless-input input {
+  border: none;
+  background: transparent !important;
+  box-shadow: none;
+  padding: 2px 0; 
+  outline: none;  
+  display: flex;
+  text-align: center !important;
+}
+
+.borderless-textbox input::placeholder {
+  color: rgb(192, 192, 192); 
+  opacity: 1;   
+  text-align: center; 
+}
+
+.borderless-textbox input:focus {
+  border-bottom: 1px solid #ccc;
+}
+
+.text-date {
+  justify-content: center;  /* Horizontal center */
+  align-items: center;      /* Vertical center */
+  height: 100%;             /* Ensure it has height to center in */
+  text-align: center;       /* Align text content if it wraps */
+}
+
+.black-button {
+  color: #000000;   
+  font-size: 16px;       
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.white-button {
+  background-color:transparent;     // Button background
+  color: white;                // Text color for contrast
+}
+
+// custom submenu styling
+.region-topbar .mx-navbar ul.nav > .mx-navbar-item.open .dropdown-menu {
+    background-color: $Stark-lighter-darkblue;
+}
+
+.topbar-content {
+    display: flex;
+    align-items: center;
+    padding: 10px 40px 10px 30px;
+
+    //
+    .btn.mx-button.btn-primary {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 60px;
+        font-size: 20px;
+        background-color: transparent;
+        color: $font-color-default;
+        font-weight: 600;
+        transition: ease-in-out 0.3s;
+        border-radius: 100%;
+        border: none;
+        width: 44px;
+        height: 44px;
+
+        &:hover {
+            transition: ease-in-out 0.3s;
+            background-color: $brand-primary;
+            color: #ffffff;
+            font-weight: 600;
+            border: none;
+        }
+    }
+    // removing default layoutgrid padding
+    .mx-layoutgrid.navbar-brand {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        padding-right: 60px;
+    }
+    // overwriting the default width for the row element created by mendix
+    > .row {
+        width: 100%;
+    }
+}
+
+// sidebar restyling
+.region-sidebar {
+    background: $sidebar-bg;
+    color: #ffffff;
+
+    .cs_divider {
+        border-top: 1px solid rgba(255, 255,255, 0.1);
+    }
+}
+.cs_topbar-content-box .mx-placeholder {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    h1 {
+        font-size: 24px;
+        margin: 0 30px 0 0;
+    }
+}
+
+// custom language selection styling
+.cs_custom-language-selection {
+    color: $font-color-default;
+}
+// Masterdata side menu general styling
+.mx-navigationlist {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+// masterdata side menu selected status
+@for $i from 1 through 25 {
+    .cs_selected-#{$i} {
+        .mx-navigationlist-item:nth-child(#{$i}) {
+            background-color: $brand-primary;
+            span {
+                color: #ffffff;
+                font-weight: 600;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: $brand-primary;
+                cursor: default;
+                span {
+                    color: #ffffff;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+
+// custom side menu styling
+.mx-navigationtree .navbar-inner > ul > li > a {
+    padding: 16px;
+    // border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+

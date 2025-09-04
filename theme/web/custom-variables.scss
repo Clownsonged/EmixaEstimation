@@ -1,3 +1,4 @@
+@import "../../themesource/atlas_core/web/_variables.scss";
 //
 // ██████╗  █████╗ ███████╗██╗ ██████╗
 // ██╔══██╗██╔══██╗██╔════╝██║██╔════╝
@@ -9,7 +10,7 @@
 
 //== Gray Shades
 //## Different gray shades to be used for our variables and components
-$gray-darker: #0a1325;
+$gray-darker: #102347;
 $gray-dark: #474e5c;
 $gray: #787d87;
 $gray-light: #a9acb3;
@@ -17,11 +18,16 @@ $gray-primary: #e7e7e9;
 $gray-lighter: #f8f8f8;
 
 //== Step 1: Brand Colors
-$brand-default: $gray-primary;
-$brand-primary: #264ae5;
+// Blue for primaire and secondary buttons 
+$brand-default: #00456e; // Dark Stark blue default buttons and icons
+$brand-primary: #00456e;
 $brand-success: #3cb33d;
 $brand-warning: #eca51c;
 $brand-danger: #e33f4e;
+
+// brand custom colors
+$Stark-lighter-darkblue: #00456e; // Search bar bg
+$Stark-lightblue: #66c5c4; // info card bg and light blue for buttons and links
 
 $brand-logo: false;
 $brand-logo-height: 32px;
@@ -38,12 +44,12 @@ $border-color-default: #ced0d3;
 $border-radius-default: 4px;
 
 // Topbar
-$topbar-bg: #020557;
+$topbar-bg: $brand-default;
 $topbar-minimalheight: 48px;
 $topbar-border-color: $border-color-default;
 
 // Sidebar
-$sidebar-bg: #24276c;
+$sidebar-bg: #1d1a39;
 
 // Topbar mobile
 $m-header-height: 45px;
@@ -56,7 +62,7 @@ $navbar-brand-name: #fff;
 
 // Background Colors
 // Backgrounds
-$bg-color: #f8f8f8;
+$bg-color: #E7E9EF;
 $bg-color-secondary: #fff;
 
 // Default Link Color

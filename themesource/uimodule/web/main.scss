@@ -1,0 +1,12 @@
+@import '../../../theme/web/custom-variables';
+
+// Custom styling items
+@import "pivottable";
+@import 'custom-menu';
+
+.pivottable{
+    --red: #e33f4e;
+    --orange: orange;
+    --yellow: yellow;
+
+}
