@@ -3,3 +3,8 @@
 .no-scroll .mx-dataview-content {
     overflow-y: visible !important;
 }
+
+.keep-whitespace .table .td > .td-text, .table .td * {
+    white-space: pre-wrap  !important;
+    word-break: break-word !important;
+}

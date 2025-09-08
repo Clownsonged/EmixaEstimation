@@ -28741,4 +28741,9 @@ Do not render = "none"
   overflow-y: visible !important;
 }
 
+.keep-whitespace .table .td > .td-text, .table .td * {
+  white-space: pre-wrap !important;
+  word-break: break-word !important;
+}
+
 /*# sourceMappingURL=theme.compiled.css.map */
