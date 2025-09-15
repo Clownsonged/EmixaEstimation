@@ -28098,6 +28098,17 @@ Do not render = "none"
   max-height: 55px;
 }
 
+.select {
+  border: 3px solid rgb(55, 153, 55) !important;
+  padding: 0.5rem;
+  border-radius: 4px;
+  outline: none;
+}
+.select:focus {
+  border-color: rgb(120, 150, 120);
+  box-shadow: 0 10 3px rgb(45, 49, 45);
+}
+
 .small-toggle {
   transform: scale(0.55) translateY(-17px) translateX(14px);
   transform-origin: left center;
@@ -28198,6 +28209,13 @@ Do not render = "none"
 .cell-blank {
   background-color: #f0f0f0;
   color: #000000;
+}
+
+.badge-small {
+  font-size: 0.8rem;
+  padding: 2px 6px;
+  border-radius: 10px;
+  line-height: 2;
 }
 
 .highlight-cell {
