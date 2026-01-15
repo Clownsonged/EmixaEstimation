@@ -55,13 +55,17 @@ Before you can download and run this tool, you need to have the following instal
    - Select the file: **"Emixa UK Project Estimation Tool.mpr"**
    - Click **"Open"**
 
-2. **Run the Application:**
+2. **Install Required Modules (if prompted):**
+   - If Mendix Studio Pro prompts you to download missing marketplace modules, click **"Download"**
+   - Wait for all modules to be downloaded and installed
+
+3. **Run the Application:**
    - In Mendix Studio Pro, click the **"Run Locally"** button (F5) in the toolbar
    - Wait for the application to start (this may take a few minutes on the first run)
    - Once running, the application will automatically open in your default web browser
    - Default URL is typically: `http://localhost:8080`
 
-3. **Login:**
+4. **Login:**
    - Use the default administrator credentials (if configured)
    - Or create a new user account as prompted
 
@@ -103,7 +107,8 @@ EmixaEstimation/
 
 ### Module Errors
 - Ensure all marketplace modules are properly downloaded
-- In Mendix Studio Pro, go to **App** > **Download from Team Server** to sync modules
+- When opening the project, Mendix Studio Pro will prompt you to download any missing marketplace modules
+- Click **"Download"** when prompted to install required modules automatically
 
 ## Support
 
